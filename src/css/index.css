@@ -1,0 +1,156 @@
+@import url("https://necolas.github.io/normalize.css/8.0.0/normalize.css");
+@import url("https://fonts.googleapis.com/css?family=Slabo+27px");
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  background: #0d3785;
+  background: -webkit-linear-gradient(to right, #b8c9e7, #0d3785);
+  background: linear-gradient(to right, #b8c9e7, #0d3785);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.contenedor {
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+header {
+  background-color: #07353b;
+  padding: 10px;
+  font-weight: bold;
+  color: white;
+}
+
+.boton {
+  background-color: #00838F!important;
+  font-size: 16px;
+  width: 100%;
+  padding: 15px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.boton:hover {
+  cursor: pointer;
+}
+
+header h1{
+  font-size: 2rem;
+  margin: 0;
+  font-family: 'Slabo 27px', serif;
+  text-align: center;
+}
+
+.contenedor-formulario {
+  background-color: whitesmoke;
+  padding: 3rem;
+}
+
+.campo {
+  display: flex;
+  margin-bottom: 1rem;
+  align-items: center;
+}
+
+.campo label {
+  flex: 0 0 80px;
+}
+
+.campo input[type="radio"] {
+  margin: .5rem;
+}
+
+.resumen {
+  padding: 1rem;
+  background-color: #196e75;
+  color: white;
+  margin-top: 1rem;
+}
+
+.resumen h2 {
+  text-align: center;
+  font-weight: bolder;
+}
+
+.mostrar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.mostrar div {
+  font-weight: bolder;
+  font-size: 18px;
+}
+
+.etiquetas{
+  max-width: 130px;
+}
+
+.datos {
+  margin-left: 2rem;
+}
+
+.resultado  {
+  margin-bottom: 40px;
+}
+
+.resultado div {
+  border: 1px solid #26C6DA;
+  text-align: center;
+  padding: 0  0 20px 0;
+}
+
+.resultado div p {
+  margin-bottom: 0;
+}
+
+.resultado div p.header {
+  background-color: #26C6DA;
+  margin-bottom: 10px;
+  color:white;
+  padding: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+span.resultado {
+  position: relative;
+  width: 100%;
+}
+
+.resultado-enter {
+  transition: .5s;
+  transform: translateY(120%);
+}
+
+.resultado-enter.resultado-enter-active{
+  transform: translateY(120%);
+}
+
+.resultado-exit {
+  transform: translateY(0);
+  transition: .5s;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.resultado-exit-active {
+  opacity: 0;
+  transform: translateY(-100%);
+}
+
+.gran-total {
+  text-align: center;
+  padding: .5rem;
+  border: 1px solid #26C6DA;
+  background-color: rgb(127, 224, 237);
+  margin-top: 1rem;
+}
